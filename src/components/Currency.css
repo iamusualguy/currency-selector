@@ -1,0 +1,48 @@
+.currency {
+  color: #124572;
+  background: #ececec;
+  border: 1px solid #a3a3a3;
+  width: 9em;
+  height: 2em;
+  line-height: 2;
+  margin: 0.5em 0.3em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.currency:not(.selected):hover {
+  background: #ddd;
+}
+
+.currency.selected {
+  background: #fff;
+}
+
+input[type=checkbox] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+  pointer-events: none;
+}
+
+input[type=checkbox]:before {
+  content: "X";
+  font-size: 1em;
+  color: transparent !important;
+  background: #0000;
+  display: block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 0.1em;
+  border: 0.05em solid #a3a3a3;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+input[type=checkbox]:checked:before {
+  color: red !important;
+  background: #fff;
+}
